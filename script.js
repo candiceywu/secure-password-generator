@@ -44,55 +44,56 @@ function generatePassword() {
     var userSpecial = window.confirm("Do you want to include special characters?");
     console.log(userSpecial);
 
-    
 
+    // If the user doesn't select at least one option, it will cycle through this again
     while (!userLowercase && !userUppercase && !userNumerical && !userSpecial) {
         alert("Please select at least one option.");
         userLowercase = window.confirm("Do you want to include lowercase characters?");
         console.log(userLowercase);
-    
+
         //Ask the user to confirm choice of uppercase: 
         userUppercase = window.confirm("Do you want to include uppercase characters?");
         console.log(userUppercase);
-    
+
         //Ask the user to confirm choice of numerical: 
         userNumerical = window.confirm("Do you want to include numerical characters?");
         console.log(userNumerical);
-    
+
         //Ask the user to confirm choice of special characters: 
         userSpecial = window.confirm("Do you want to include special characters?");
         console.log(userSpecial);
     };
 
     //takes the user's selections and adds them into the array of potential characters
-    
+
     if (userLowercase) {
         finalArray = finalArray.concat(lowercaseCharacters);
-    }if (userUppercase) {
+    } if (userUppercase) {
         finalArray = finalArray.concat(uppercaseCharacters);
-    }if (userNumerical) {
+    } if (userNumerical) {
         finalArray = finalArray.concat(numericalCharacters);
-    }if (userSpecial) {
+    } if (userSpecial) {
         finalArray = finalArray.concat(specialCharacters);
     }
+
+    // need to guarantee that all user selection(s) will be included in password
+    // // 0 = lowercaseCharacters, 1 = uppercaseCharacters, 2 = numericalCharacters, 3 = specialCharacters
+    // for (var i = 0; i < length; i++) {
+    //     var randomOption = Math.floor(Math.random() * 4);
+    //     if (randomOption == 0 && !userLowercase)
+    //     //choose uppercaseCharacters
+    //     finalArray.push(uppercaseCharacters[Math.floor(Math.random() * 3)]);
+
+    // }
+
     var string = "";
     for (var i = 0; i < length; i++) {
-    string = string + finalArray[Math.floor(Math.random()*finalArray.length)]; //need to fix something in this 
+        string = string + finalArray[Math.floor(Math.random() * finalArray.length)]; 
     }
-    console.log(string);
+    console.log(string); //need to fix something in this 
 
     console.log(finalArray);
     return string;
 }
 
-
-    //Now all options have been selected and saved, but need to make sure selected options are guaranteed in next password array as an object. object needs to be compared to the array of possible options as well
-
-    // var userSelection = {
-    //     passwordLength: [],
-    //     userLowercase: [],
-    //     userUppercase: [],
-    //     userNumerical: [],
-    //     userSpecial: []
-    // }
-    // console.log(userSelection);
+//then you have to display the password in the "#password" placeholder text - either textContent or append?

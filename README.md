@@ -8,6 +8,9 @@ This project took an inordinate amount of time to develop, and I learned a lot a
 ## Installation
 For installation and deployment, please [click here](https://candiceywu.github.io/secure-password-generator/). The application should launch with all windows prompts active. 
 
+## Technologies and languages used
+HTML, CSS and JavaScript were utilized for this application.
+
 ## Usage
 When loaded for the first time, the application will not show any prompts. The application includes a red button named "Generate Password", that, when clicked, will prompt the user to enter a number between 8 and 128, which determines the password length. After this is correctly selected, the window will prompt the user to answer four questions on what types of characters they'd like to include in the password. The final auto-generated password will then show up in the white box for use. The following images show the web application's appearance, with prompts asking the user for their password preferences, followed by the final generated password:
 
@@ -19,5 +22,7 @@ When loaded for the first time, the application will not show any prompts. The a
 ## License & Copyright
 
 (c) Candice Wu 
+
+contact: candice.ying.wu@gmail.com 
 
 Licensed under the MIT License.

@@ -11,4 +11,13 @@ For installation and deployment, please [click here](https://candiceywu.github.i
 ## Usage
 When loaded for the first time, the application will not show any prompts. The application includes a red button named "Generate Password", that, when clicked, will prompt the user to enter a number between 8 and 128, which determines the password length. After this is correctly selected, the window will prompt the user to answer four questions on what types of characters they'd like to include in the password. The final auto-generated password will then show up in the white box for use. The following image shows the web application's appearance:
 
-![Candice Wu's secure password generator application includes a button that, when pushed and with the user's discretion, generates a secure password.](assets/images/screenshot.png)
+
+![Candice Wu's secure password generator application includes a button that, when pushed and with the user's discretion, generates a secure password. Here is the application with one of the prompts:](assets/images/screenshot2.png)
+
+![Here is the second image with the final, securely generated password:](assets/images/screenshot.png)
+
+## License & Copyright
+
+(c) Candice Wu 
+
+Licensed under the MIT License.
